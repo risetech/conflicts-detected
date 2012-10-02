@@ -11,7 +11,7 @@ namespace VKInfo.Models
 	public class ManologyUser
 	{
 		[BsonId]
-		public ObjectId id { get; set; }
+		public ObjectId Id { get; set; }
 		public int UserId { get; set; }
 		public string AccessToken { get; set; }
 		public string LikedMeUsers { get; set; }
