@@ -1,0 +1,31 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+	Layout = null;
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Manology</title>
+	<link href="@Url.Content("~/Content/custom.css")" rel="stylesheet" />
+	<script src="@Url.Content("~/scripts/jquery-1.7.1.min.js")"></script>
+	<script src="@Url.Content("~/scripts/app.js")"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="center content">
+			<img src="@Url.Content("~/Content/images/bg.png")" alt="Manology" class="centeredImage" />
+			<div id="info">
+				<h1>Manology – узнай лучше себя и своих друзей
+				</h1>
+				<em>Анализ человека по его профилю в социальных сетях</em>
+				@Html.Partial("_VkLoginButton")
+			</div>
+			<div class="tip" data-info="infoblock">i</div>
+			<div id="infoblock"></div>
+			@*<div class="square" id="sq1"></div>
+			<div class="square" id="sq2"></div>
+			<div class="square" id="sq3"></div>*@
+		</div>
+	</div>
+</body>
+</html>
